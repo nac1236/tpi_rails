@@ -13,6 +13,8 @@
 
 - `git clone https://github.com/nac1236/tpi_rails.git`, para obtener el proyecto.
 
+- `cd tpi_rails`
+
 - Ejecutar `bundle install`, luego de la descarga para instalar todas las dependencias.
 
 - Editar las credenciales de acceso a la base de datos en el archivo config/database.yml, según corresponda.
