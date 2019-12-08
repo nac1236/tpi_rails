@@ -1,30 +1,33 @@
-# Ruby version --> 2.6.5
+# TTPS 2019
+# Requisitos.
 
-# MySQL
+* Ruby version --> 2.6.5
+* MySQL
+* Bundler
 
-# Bundler
-##
-# System dependencies:
+# Dependencias del sistema.
 
-- Para unir gema mysql2 con la libreria libmysql: https://www.rubydoc.info/gems/mysql2/0.5.3
+- Para unir la gema mysql2 con la libreria libmysql: https://www.rubydoc.info/gems/mysql2/0.5.3
 
-# Configuration
+# Configuración.
 
-- Ejecutar `bundle install`, para instalar todas las dependencias del proyecto.
+- `git clone https://github.com/nac1236/tpi_rails.git`, para obtener el proyecto.
+
+- Ejecutar `bundle install`, luego de la descarga para instalar todas las dependencias.
 
 - Editar las credenciales de acceso a la base de datos en el archivo config/database.yml, según corresponda.
 
-# Database creation
+# Creación de la base de datos.
 
-- Levantar el servidor de bd.
+- Levantar el servidor de la base de datos.
 
 - Desde una terminal ejecutar --> `bin/rails db:create`
 
-# Deployment instructions
+# Iniciar el servidor.
 
-- Por último también desde una terminal ejecutar --> `bin/rails s`
+- Desde una terminal ejecutar --> `bin/rails s`
 
-# Rutas:
+# Rutas.
 
- GET "/home" Retorna un documento html que saluda.
+ GET "/home" Retorna "Hola mundo!".
 
