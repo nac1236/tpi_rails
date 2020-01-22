@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     get 'products(/:q)', to: 'products#index'
   end
 
+  #post 'usuarios', to: 'users#create'
+  jsonapi_resources :sesiones, only: [:create]
+  jsonapi_resources :usuarios
+
   jsonapi_resources :products, except: [:index] do
     jsonapi_resources :items
   end
