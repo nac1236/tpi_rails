@@ -44,11 +44,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: tpi_ttps2019_cazorla_production
-  username: tpi_ttps2019_cazorla
-  password: <%= ENV['TPI_TTPS2019_CAZORLA_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+#production:
+#  <<: *default
+#  database: tpi_ttps2019_cazorla_production
+#  username: tpi_ttps2019_cazorla
+#  password: <%= ENV['TPI_TTPS2019_CAZORLA_DATABASE_PASSWORD'] %>

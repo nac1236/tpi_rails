@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   end
 
   #post 'usuarios', to: 'users#create'
-  jsonapi_resources :sesiones, only: [:create]
-  jsonapi_resources :usuarios
+  jsonapi_resources :sessions, only: :create
+  jsonapi_resources :users
 
   jsonapi_resources :products, except: [:index] do
     jsonapi_resources :items

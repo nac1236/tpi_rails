@@ -5899,3 +5899,1749 @@ Processing by UsersController#create as JSON
 Completed 422 Unprocessable Entity in 9ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 8152)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+Started POST "/session" for ::1 at 2020-01-22 00:15:29 -0300
+  [1m[35m (2.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (72.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/session"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+Started POST "/sessions" for ::1 at 2020-01-22 00:18:13 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "attributes"=>{"username"=>"user7", "password"=>"[FILTERED]"}}, "session"=>{"data"=>{"type"=>"users", "attributes"=>{"username"=>"user7", "password"=>"[FILTERED]"}}}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1903)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:18:41 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions", "attributes"=>{"username"=>"user7", "password"=>"[FILTERED]"}}, "session"=>{"data"=>{"type"=>"sessions", "attributes"=>{"username"=>"user7", "password"=>"[FILTERED]"}}}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 896)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:22:39 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+Internal Server Error: undefined method `new' for nil:NilClass /home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/resource.rb:516:in `create_model'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/resource.rb:512:in `create'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:232:in `create_resource'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:58:in `block (2 levels) in process'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:57:in `block in process'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:56:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation.rb:16:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:58:in `block in process_operation'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:63:in `with_default_handling'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:57:in `process_operation'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:29:in `block (2 levels) in process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:28:in `each'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:28:in `block in process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:43:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:93:in `block (2 levels) in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:281:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/transaction.rb:280:in `block in within_new_transaction'
+/home/nacho/.rubies/ruby-2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/transaction.rb:278:in `within_new_transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:281:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/transactions.rb:212:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:92:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:42:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:24:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:86:in `block in process_operations'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:85:in `process_operations'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:77:in `process_request'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:29:in `create'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/base.rb:196:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications.rb:180:in `instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/base.rb:136:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/actionview-6.0.1/lib/action_view/rendering.rb:39:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal.rb:191:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal.rb:252:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/tempfile_reaper.rb:15:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/etag.rb:25:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/conditional_get.rb:38:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:232:in `context'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:226:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/cookies.rb:648:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/migration.rb:567:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:132:in `call_app'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:28:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:17:in `catch'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:17:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:26:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:26:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/runtime.rb:22:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/sendfile.rb:111:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/webpacker-4.2.0/lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-proxy-0.6.5/lib/rack/proxy.rb:57:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/engine.rb:526:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 3696)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:26:26 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+Internal Server Error: undefined method `new' for nil:NilClass /home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/resource.rb:516:in `create_model'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/resource.rb:512:in `create'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:232:in `create_resource'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:58:in `block (2 levels) in process'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:57:in `block in process'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/processor.rb:56:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation.rb:16:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:58:in `block in process_operation'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:63:in `with_default_handling'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:57:in `process_operation'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:29:in `block (2 levels) in process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:28:in `each'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:28:in `block in process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:43:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:93:in `block (2 levels) in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:281:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/transaction.rb:280:in `block in within_new_transaction'
+/home/nacho/.rubies/ruby-2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/transaction.rb:278:in `within_new_transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:281:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/transactions.rb:212:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:92:in `block in transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:42:in `transaction'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/operation_dispatcher.rb:24:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:86:in `block in process_operations'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:85:in `process_operations'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:77:in `process_request'
+/home/nacho/.gem/ruby/2.6.5/gems/jsonapi-resources-0.9.9/lib/jsonapi/acts_as_resource_controller.rb:29:in `create'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/base.rb:196:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications.rb:180:in `block in instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/notifications.rb:180:in `instrument'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/abstract_controller/base.rb:136:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/actionview-6.0.1/lib/action_view/rendering.rb:39:in `process'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal.rb:191:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_controller/metal.rb:252:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:49:in `block in serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:32:in `each'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/journey/router.rb:32:in `serve'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/routing/route_set.rb:837:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/tempfile_reaper.rb:15:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/etag.rb:25:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/conditional_get.rb:38:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:232:in `context'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/session/abstract/id.rb:226:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/cookies.rb:648:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/activerecord-6.0.1/lib/active_record/migration.rb:567:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/callbacks.rb:101:in `run_callbacks'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:132:in `call_app'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:28:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:17:in `catch'
+/home/nacho/.gem/ruby/2.6.5/gems/web-console-4.0.1/lib/web_console/middleware.rb:17:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:26:in `block in call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:80:in `block in tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/tagged_logging.rb:80:in `tagged'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/rack/logger.rb:26:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/runtime.rb:22:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/activesupport-6.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/static.rb:126:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-2.0.7/lib/rack/sendfile.rb:111:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/actionpack-6.0.1/lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/webpacker-4.2.0/lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+/home/nacho/.gem/ruby/2.6.5/gems/rack-proxy-0.6.5/lib/rack/proxy.rb:57:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/railties-6.0.1/lib/rails/engine.rb:526:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/configuration.rb:228:in `call'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:681:in `handle_request'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:472:in `process_client'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/server.rb:328:in `block in run'
+/home/nacho/.gem/ruby/2.6.5/gems/puma-4.3.1/lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Completed 500 Internal Server Error in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 3676)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:27:11 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1654)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:27:31 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:29:54 -0300
+  
+SyntaxError (/home/nacho/tpi_rails/app/controllers/sessions_controller.rb:9: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_controller.rb:9: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:9: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:9: syntax error, unexpected end-of-input, expecting end
+Started POST "/sessions" for ::1 at 2020-01-22 00:30:08 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 404 Not Found in 25ms (ActiveRecord: 17.9ms | Allocations: 3416)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'={:username=>"user7"}):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/sessions" for ::1 at 2020-01-22 00:31:20 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user7' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 2.7ms | Allocations: 4772)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:31:41 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user7' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 4559)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:35:18 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user7' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.4ms | Allocations: 4535)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 00:38:53 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user7", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user7' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 1.5ms | Allocations: 4622)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:01:27 -0300
+  [1m[35m (47.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 4.7ms | Allocations: 49391)
+
+
+  
+NoMethodError (undefined method `is_authenticated' for #<ProductsController:0x000055c73ae27ca8>
+Did you mean?  is_authenticathed):
+  
+activesupport (6.0.1) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.1) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.1) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.1) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:01:57 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.8ms | Allocations: 97213)
+
+
+  
+NameError (undefined local variable or method `errors' for #<ProductsController:0x00007f49301bb658>):
+  
+app/controllers/sessions_handling.rb:21:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:02:29 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 1334)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started POST "/users" for ::1 at 2020-01-22 13:03:14 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"u"=>"user5", "p"=>"12345"}}
+Completed 400 Bad Request in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1777)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:04:52 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{"data":{"type":"users"}"u":"user5", "p":"12345"}
+  
+ActionDispatch::Http::Parameters::ParseError (767: unexpected token at '{"data":{"type":"users"}"u":"user5", "p":"12345"}'):
+  
+actionpack (6.0.1) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (6.0.1) lib/action_dispatch/http/parameters.rb:111:in `parse_formatted_parameters'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:381:in `block in POST'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch_header'
+actionpack (6.0.1) lib/action_dispatch/http/request.rb:380:in `POST'
+actionpack (6.0.1) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:279:in `_wrapper_enabled?'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (6.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{"data":{"type":"users"}"u":"user5", "p":"12345"}
+Started POST "/users" for ::1 at 2020-01-22 13:05:17 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:4:in `create_resource'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 26ms (Views: 0.3ms | ActiveRecord: 4.3ms | Allocations: 10360)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:06:20 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 26ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 4980)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:06:44 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "u"=>"user5", "p"=>"12345"}, "user"=>{}}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 779)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:07:08 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 4964)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:07:30 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 4917)
+
+
+Started POST "/products" for ::1 at 2020-01-22 13:08:16 -0300
+Processing by ProductsController#create as JSON
+  Parameters: {"data"=>{"type"=>"products", "attributes"=>{}}, "u"=>"user5", "p"=>"12345", "product"=>{}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 436)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.1) lib/action_controller/metal/request_forgery_protection.rb:217:in `handle_unverified_request'
+actionpack (6.0.1) lib/action_controller/metal/request_forgery_protection.rb:249:in `handle_unverified_request'
+actionpack (6.0.1) lib/action_controller/metal/request_forgery_protection.rb:244:in `verify_authenticity_token'
+activesupport (6.0.1) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.1) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.1) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.1) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.1) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-01-22 13:08:57 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"products", "attributes"=>{}}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 755)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:09:11 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "attributes"=>{}}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 4935)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:09:34 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "attributes"=>{"u"=>"user5", "p"=>"12345"}}, "user"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 837)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:09:48 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "attributes"=>{}, "u"=>"user5", "p"=>"12345"}, "user"=>{}}
+Completed 400 Bad Request in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 777)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:09:58 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users", "attributes"=>{}}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 8ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 4937)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:10:27 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"u"=>"user5", "p"=>"12345"}}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 715)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:10:46 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"user"=>{"u"=>"user5", "p"=>"12345"}}, "user"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 741)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:11:11 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"user"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 730)
+
+
+Started POST "/users" for ::1 at 2020-01-22 13:11:18 -0300
+Processing by UsersController#create as JSON
+  Parameters: {"data"=>{"type"=>"users"}, "u"=>"user5", "p"=>"12345", "user"=>{}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  ↳ app/processors/user_processor.rb:5:in `create_resource'
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.9ms | ActiveRecord: 1.7ms | Allocations: 4917)
+
+
+Started POST "/sessions" for ::1 at 2020-01-22 13:12:00 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"session"}, "u"=>"user5", "p"=>"12345", "session"=>{"data"=>{"type"=>"session"}, "u"=>"user5", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user5' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 10ms (ActiveRecord: 0.4ms | Allocations: 2459)
+
+
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:12:59 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 499)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:14:04 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 499)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:15:55 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.7ms | Allocations: 97333)
+
+
+  
+NameError (undefined local variable or method `requests' for #<ProductsController:0x00007f4930fd6d78>
+Did you mean?  request
+               request=
+               @_request):
+  
+app/controllers/sessions_handling.rb:18:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:16:08 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 1738)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/sessions_handling.rb:19:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:17:00 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 865)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/sessions_handling.rb:19:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:17:28 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 1705)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/sessions_handling.rb:20:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:18:11 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms | Allocations: 1702)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/sessions_handling.rb:20:in `http_auth_header'
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:18:44 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.0ms | Allocations: 1455)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:22:46 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.0ms | Allocations: 1400)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/in_stock" for ::1 at 2020-01-22 13:23:06 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"in_stock", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1433)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+Started POST "/sessions" for ::1 at 2020-01-22 16:26:55 -0300
+  [1m[35m (46.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user5' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 20ms (ActiveRecord: 2.3ms | Allocations: 6679)
+
+
+Started GET "/products" for ::1 at 2020-01-22 16:28:24 -0300
+  
+SyntaxError (/home/nacho/tpi_rails/app/controllers/sessions_handling.rb:14: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+...crets.secret_key_base, 'HS256')
+...                              ^
+/home/nacho/tpi_rails/app/controllers/sessions_handling.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_handling.rb:14: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/sessions_handling.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_handling.rb:14: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/sessions_handling.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_handling.rb:14: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/sessions_handling.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/products_controller.rb:2:in `<class:ProductsController>'
+app/controllers/products_controller.rb:1:in `<main>'
+Started GET "/products" for ::1 at 2020-01-22 16:28:46 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 4.0ms | Allocations: 1505)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:29:25 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1458)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:29:50 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1499)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+Started GET "/products" for ::1 at 2020-01-22 16:31:11 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms | Allocations: 1346)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:31:18 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 517)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:31:37 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 1381)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:31:56 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1446)
+
+
+  
+JWT::ExpiredSignature (Signature has expired):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started POST "/sessions" for ::1 at 2020-01-22 16:32:08 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user5' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 2.3ms | Allocations: 4586)
+
+
+Started GET "/products" for ::1 at 2020-01-22 16:32:28 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 697)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started POST "/sessions" for ::1 at 2020-01-22 16:33:06 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user5' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.4ms | Allocations: 4609)
+
+
+Started GET "/products" for ::1 at 2020-01-22 16:33:26 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 754)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started POST "/sessions" for ::1 at 2020-01-22 16:35:36 -0300
+Processing by SessionsController#create as JSON
+  Parameters: {"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345", "session"=>{"data"=>{"type"=>"sessions"}, "u"=>"user5", "p"=>"12345"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'user5' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.3ms | Allocations: 4682)
+
+
+Started GET "/products" for ::1 at 2020-01-22 16:35:57 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 754)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:37:46 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.4ms | Allocations: 1421)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:38:28 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.8ms | Allocations: 97218)
+
+
+  
+NameError (undefined local variable or method `decoded_token' for #<ProductsController:0x00007fd0f4059048>
+Did you mean?  decoded_auth_token):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:38:43 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.7ms | Allocations: 97450)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x000055c0638bc6e8>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:39:18 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 1426)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_handling.rb:16:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:40:41 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.7ms | Allocations: 97417)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd0f41666c0>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:41:18 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.7ms | Allocations: 97416)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd10017a4e8>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:41:41 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.7ms | Allocations: 97459)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd0f40cf2e8>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:42:05 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.6ms | Allocations: 97414)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd0f40dca38>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:42:26 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.6ms | Allocations: 97455)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x000055c0644aeca8>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:43:39 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.7ms | Allocations: 97412)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd1044760f8>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:44:30 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.6ms | Allocations: 97412)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd10017b320>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:44:47 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.7ms | Allocations: 97451)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd1001a4ef0>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:45:05 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.7ms | Allocations: 97410)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd1001f02b0>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:45:32 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.8ms | Allocations: 97449)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd1001c44d0>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:45:49 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.7ms | Allocations: 97403)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd10012e390>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:46:38 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.7ms | Allocations: 97403)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<ProductsController:0x00007fd100011868>
+Did you mean?  user_url):
+  
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:47:13 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 2074)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/sessions_handling.rb:5:in `[]'
+app/controllers/sessions_handling.rb:5:in `is_authenticated'
+Started GET "/products" for ::1 at 2020-01-22 16:47:27 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/sessions_handling.rb:4:in `is_authenticated'
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 10ms (ActiveRecord: 1.8ms | Allocations: 6873)
+
+
+Started GET "/products" for ::1 at 2020-01-22 16:48:11 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/sessions_handling.rb:4:in `is_authenticated'
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.4ms | Allocations: 1027)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 16:48:25 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/sessions_handling.rb:4:in `is_authenticated'
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/controllers/products_controller.rb:33:in `serialize_product'
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 2.1ms | Allocations: 6536)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 16:48:46 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 564)
+
+
+  
+JWT::VerificationError (Signature verification raised):
+  
+app/controllers/sessions_handling.rb:14:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/all" for ::1 at 2020-01-22 17:13:20 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1393)
+
+
+  
+JWT::VerificationError (Signature verification raised):
+  
+app/controllers/sessions_handling.rb:9:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/all" for ::1 at 2020-01-22 17:13:41 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/sessions_handling.rb:4:in `is_authenticated'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  ↳ app/controllers/products_controller.rb:37:in `serialize_product'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 9714)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:13:57 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 509)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/sessions_handling.rb:9:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/all" for ::1 at 2020-01-22 17:17:15 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1343)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/sessions_handling.rb:9:in `decoded_auth_token'
+app/controllers/sessions_handling.rb:4:in `is_authenticated'
+Started GET "/products/all" for ::1 at 2020-01-22 17:22:18 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1566)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:22:48 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.7ms | Allocations: 1418)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:23:30 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms | Allocations: 1565)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:24:29 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.9ms | Allocations: 1382)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:25:25 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.6ms | Allocations: 1381)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:27:20 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.7ms | Allocations: 1373)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:32:30 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 1.0ms | Allocations: 1382)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:35:30 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.7ms | Allocations: 1373)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:35:52 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.7ms | Allocations: 1418)
+
+
+Started GET "/products/all" for ::1 at 2020-01-22 17:41:35 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2167)
+
+
+  
+NoMethodError (undefined method `new' for JSONAPI::Exceptions:Module):
+  
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:42:00 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.8ms | Allocations: 97483)
+
+
+  
+NameError (undefined local variable or method `bad_request' for #<ProductsController:0x00007fd104418bd8>
+Did you mean?  @_request):
+  
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:42:12 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1571)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:42:23 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.1ms | Allocations: 1613)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:42:50 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1579)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:43:08 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms | Allocations: 1614)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:43:19 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 1614)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:32:in `new'
+app/controllers/products_controller.rb:32:in `index'
+Started GET "/products/all" for ::1 at 2020-01-22 17:43:59 -0300
+Processing by ProductsController#index as JSON
+  Parameters: {"q"=>"all", "product"=>{}}
+No template found for ProductsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.8ms | Allocations: 1390)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+  [1m[35m (17.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7168959988392826365', 0)[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateClientes (20200123184100)
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE `clientes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `cuil` int, `cuit` int, `nombre` varchar(255), `razon_social` varchar(255), `codigo_tipo_responsable` int, `email` varchar(255), `telefonos` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200123184100')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7168959988392826365')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/nacho/tpi_rails/config/environment.rb:5)

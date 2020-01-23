@@ -21,6 +21,9 @@ gem 'turbolinks', '~> 5'
 # For building JSON API. Read more: https://github.com/cerebris/jsonapi-resources
 gem 'jsonapi-resources', '0.9.9'
 
+# For authentication token generation
+gem 'jwt'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
