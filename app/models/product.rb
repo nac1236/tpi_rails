@@ -5,4 +5,5 @@ class Product < ActiveRecord::Base
     validates :cost_per_unit, presence: true
 
     has_many :items
+    has_many :details
 end

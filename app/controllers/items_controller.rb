@@ -1,11 +1,14 @@
 class ItemsController < JSONAPI::ResourceController
+    #include SessionsHandling
+    #before_action :is_authenticated?
+
     skip_before_action :verify_authenticity_token
 
-    def create
-        puts params[:data]['attributes']['cantidad']
-        
-        @product = Product.find(params[:product_id])
-        @product.items
-    end
+    def context
+        {
+            product_id: params[:product_id],
+            cantidad: params[:meta][:cantidad].to_i
+        }
+    end 
 
 end

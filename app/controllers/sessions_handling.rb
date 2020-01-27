@@ -1,6 +1,6 @@
 module SessionsHandling
 
-    def is_authenticated
+    def is_authenticated?
         @user = User.find(decoded_auth_token[0]["user_id"]) if decoded_auth_token
     end
     

@@ -1,6 +1,6 @@
 class ProductsController < JSONAPI::ResourceController
     include SessionsHandling
-    before_action :is_authenticated
+    before_action :is_authenticated?
 
     def index
         # use params[:nombre_del_parametro], para recuperar el valor

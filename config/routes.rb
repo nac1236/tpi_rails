@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   jsonapi_resources :products, except: [:index] do
     jsonapi_resources :items
   end
+
+  jsonapi_resources :sells
+
 end
