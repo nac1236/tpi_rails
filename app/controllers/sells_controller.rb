@@ -7,8 +7,7 @@ class SellsController < JSONAPI::ResourceController
     def context
         {
             user: @user,
-            data: params,
-            tipo_cliente: params[:data][:attributes]
+            data: params
         }
     end
 end

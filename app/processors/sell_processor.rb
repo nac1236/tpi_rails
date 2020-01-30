@@ -10,11 +10,7 @@ class SellProcessor < JSONAPI::Processor
         #   la libreria deberia encargarse de realizar rollback
         
       if(!context[:user].nil?)
-        #puts context
-        #puts params
-        params[:data][:attributes] = { user_id: context[:user] }
         params[:data][:attributes][:date] = Time.now
-        params[:data][:attributes][:tipo_cliente] = context[:tipo_cliente]['tipo-cliente']
         data = params[:data]
         resource = resource_klass.create(context)
         result = resource.replace_fields(data)
@@ -37,12 +33,12 @@ class SellProcessor < JSONAPI::Processor
             total = total + price_per_unit * cantidad
 
             # crear los items una vez que estan creados los detalles
-            items = Item.find_by(product_id: id, state: 'disponible')
-            cantidad.times do
-              items.sell_id = id 
-              items.state = 'vendido'
-              items.sold_price = price_per_unit
-              to_store.push(items)
+            items = Item.where(["product_id = ? AND state = ?", id, "disponible"]).first(cantidad)
+            items.each do |item|
+              item.sell_id = id 
+              item.state = 'vendido'
+              item.sold_price = price_per_unit
+              to_store.push(item)
             end
             details.push(Detail.new(product_id: id, number_of_items: cantidad,sell_id: resource.id ))
           else
@@ -50,13 +46,16 @@ class SellProcessor < JSONAPI::Processor
             return false
           end
 
+          # Guardo el total en la venta
+          Sell.where("id = ?",resource.id).update(total: total)
+
           # Almaceno detalles y actualizo los items
           details.each do |detail|
             detail.save()
           end
           to_store.each do |item|
             # Los items se actualizan mal. Ademas falta agregarles la clave de sell.
-            Item.update(state: item.state, sold_price: item.sold_price)
+            Item.where("id = ?",item.id).update(state: item.state, sold_price: item.sold_price, sell_id: resource.id)
           end
         end
         return JSONAPI::ResourceOperationResult.new((result == :completed ? :created : :accepted), resource)
@@ -122,6 +121,13 @@ class SellProcessor < JSONAPI::Processor
             if JSONAPI.configuration.top_level_links_include_pagination && paginator
               page_options[:pagination_params] = paginator.links_page_params(page_options.merge(fetched_resources: resource_records))
             end
+
+            # Probando como devolver los datos que se recuperan
+            puts (" \n\n\n Esto es lo que hay en resource records: " + resource_records.to_s + "\n\n\n")
+            puts resource_records.class
+            data = Array.new
+            # Cada elemento de resource records tiene una venta
+            puts resource_records.first().date()
       
             return JSONAPI::ResourcesOperationResult.new(:ok, resource_records, page_options)
             
