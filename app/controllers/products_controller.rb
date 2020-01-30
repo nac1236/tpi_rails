@@ -2,6 +2,8 @@ class ProductsController < JSONAPI::ResourceController
     include SessionsHandling
     before_action :is_authenticated?
 
+    skip_before_action :verify_authenticity_token
+    
     def index
         # use params[:nombre_del_parametro], para recuperar el valor
         if(@user)

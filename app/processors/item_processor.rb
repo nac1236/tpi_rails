@@ -2,6 +2,7 @@ class ItemProcessor < JSONAPI::Processor
 
     def create_resource
         params[:data][:attributes] = { product_id: context[:product_id] }
+        #params[:data][:attributes] = { sell_id: context[:sell_id] }
         data = params[:data]
         items = Array.new
         resource = nil

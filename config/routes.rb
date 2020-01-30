@@ -16,4 +16,6 @@ Rails.application.routes.draw do
 
   jsonapi_resources :sells
 
+  jsonapi_resources :details
+
 end

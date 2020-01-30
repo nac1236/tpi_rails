@@ -2,7 +2,13 @@ class SellsController < JSONAPI::ResourceController
     include SessionsHandling
     before_action :is_authenticated?
 
+    skip_before_action :verify_authenticity_token
+
     def context
-        {user: @user}
+        {
+            user: @user,
+            data: params,
+            tipo_cliente: params[:data][:attributes]
+        }
     end
 end

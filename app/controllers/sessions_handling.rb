@@ -9,7 +9,7 @@ module SessionsHandling
         begin
             @decoded_token ||= JWT.decode(http_auth_header, Rails.application.secrets.secret_key_base, 'HS256')
         rescue
-            print "Hubo un error"
+            print "Debe loguearse."
         end
         return @decoded_token
     end
