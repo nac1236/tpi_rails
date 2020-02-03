@@ -31,5 +31,3 @@
 
 # Rutas.
 
- GET "/home" Retorna "Hola mundo!".
-
