@@ -6,4 +6,5 @@ class Product < ActiveRecord::Base
 
     has_many :items
     has_many :details
+    has_many :reservation_details
 end

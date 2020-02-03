@@ -1,5 +1,5 @@
 class SellResource < JSONAPI::Resource
-    attributes :date, :tipo_cliente
+    attributes :tipo_cliente
     
     has_one :user
     has_many :details

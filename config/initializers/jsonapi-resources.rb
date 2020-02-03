@@ -21,8 +21,8 @@ JSONAPI.configure do |config|
     # Output pagination links at top level
     config.top_level_links_include_pagination = true
   
-    config.default_page_size = 10
-    config.maximum_page_size = 20
+    config.default_page_size = 25
+    config.maximum_page_size = 25
   
     # Metadata
     # Output record count in top level meta for find operation

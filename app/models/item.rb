@@ -7,4 +7,5 @@ class Item < ActiveRecord::Base
 
     belongs_to :product
     belongs_to :sell, default: nil, required: false
+    belongs_to :reservation, default: nil, required: false
 end

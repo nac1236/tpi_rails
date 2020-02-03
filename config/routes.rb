@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :home
-  
+   
   constraints(q: /[a-z]+_?[a-z]*/) do
     get 'products(/:q)', to: 'products#index'
   end
 
-  #post 'usuarios', to: 'users#create'
   jsonapi_resources :sessions, only: :create
   jsonapi_resources :users
 
@@ -17,5 +14,9 @@ Rails.application.routes.draw do
   jsonapi_resources :sells
 
   jsonapi_resources :details
+
+  put 'reservations/:id/vender', to: 'reservations#update'
+
+  jsonapi_resources :reservations, except: [:update]
 
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_29_160827) do
+ActiveRecord::Schema.define(version: 2020_02_03_005558) do
 
   create_table "cliente_autonomos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "cuit"
@@ -49,8 +49,20 @@ ActiveRecord::Schema.define(version: 2020_01_29_160827) do
     t.bigint "product_id", null: false
     t.decimal "sold_price", precision: 10
     t.bigint "sell_id"
+    t.bigint "reservation_id"
     t.index ["product_id"], name: "index_items_on_product_id"
+    t.index ["reservation_id"], name: "index_items_on_reservation_id"
     t.index ["sell_id"], name: "index_items_on_sell_id"
+  end
+
+  create_table "phone_numbers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "cliente_dependiente_id"
+    t.bigint "cliente_autonomo_id"
+    t.index ["cliente_autonomo_id"], name: "index_phone_numbers_on_cliente_autonomo_id"
+    t.index ["cliente_dependiente_id"], name: "index_phone_numbers_on_cliente_dependiente_id"
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -62,8 +74,30 @@ ActiveRecord::Schema.define(version: 2020_01_29_160827) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "reservation_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "number_of_items"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "reservation_id", null: false
+    t.bigint "product_id", null: false
+    t.index ["product_id"], name: "index_reservation_details_on_product_id"
+    t.index ["reservation_id"], name: "index_reservation_details_on_reservation_id"
+  end
+
+  create_table "reservations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.boolean "sold", default: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.bigint "cliente_autonomo_id"
+    t.bigint "cliente_dependiente_id"
+    t.decimal "total", precision: 10
+    t.index ["cliente_autonomo_id"], name: "index_reservations_on_cliente_autonomo_id"
+    t.index ["cliente_dependiente_id"], name: "index_reservations_on_cliente_dependiente_id"
+    t.index ["user_id"], name: "index_reservations_on_user_id"
+  end
+
   create_table "sells", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.datetime "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
@@ -92,7 +126,15 @@ ActiveRecord::Schema.define(version: 2020_01_29_160827) do
   add_foreign_key "details", "products"
   add_foreign_key "details", "sells"
   add_foreign_key "items", "products"
+  add_foreign_key "items", "reservations"
   add_foreign_key "items", "sells"
+  add_foreign_key "phone_numbers", "cliente_autonomos"
+  add_foreign_key "phone_numbers", "cliente_dependientes"
+  add_foreign_key "reservation_details", "products"
+  add_foreign_key "reservation_details", "reservations"
+  add_foreign_key "reservations", "cliente_autonomos"
+  add_foreign_key "reservations", "cliente_dependientes"
+  add_foreign_key "reservations", "users"
   add_foreign_key "sells", "cliente_autonomos"
   add_foreign_key "sells", "cliente_dependientes"
   add_foreign_key "sells", "users"

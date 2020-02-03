@@ -6,8 +6,9 @@ class ItemsController < JSONAPI::ResourceController
 
     def context
         {
-            product_id: params[:product_id],
-            cantidad: params[:meta][:cantidad].to_i
+            data: params
+            #product_id: params[:product_id],
+            #cantidad: params[:meta][:cantidad].to_i
         }
     end 
 

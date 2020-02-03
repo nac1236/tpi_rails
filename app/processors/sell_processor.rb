@@ -1,3 +1,5 @@
+include DetailsHandling
+
 class SellProcessor < JSONAPI::Processor
 
     def create_resource
@@ -16,66 +18,77 @@ class SellProcessor < JSONAPI::Processor
         result = resource.replace_fields(data)
         # asi puedo recuperar el id del resource --> resource.id
 
+        create_details_for(resource.id)
+
         # Inicializacion de las variables
-        details = []
-        products = context[:data][:meta]      
-        to_store = []
-        total = 0
-
-        # Reviso que las condiciones esten dadas para cada producto
-        products.each_key do |each|
-          id = products[each][:product_id]
-          cantidad = products[each][:cantidad]
-          result = evaluate_details_creation(id,cantidad)
-          if result
-            #agregar items a modificar
-            price_per_unit = Product.find(id).cost_per_unit
-            total = total + price_per_unit * cantidad
-
-            # crear los items una vez que estan creados los detalles
-            items = Item.where(["product_id = ? AND state = ?", id, "disponible"]).first(cantidad)
-            items.each do |item|
-              item.sell_id = id 
-              item.state = 'vendido'
-              item.sold_price = price_per_unit
-              to_store.push(item)
-            end
-            details.push(Detail.new(product_id: id, number_of_items: cantidad,sell_id: resource.id ))
-          else
-            #rollback
-            return false
-          end
-
-          # Guardo el total en la venta
-          Sell.where("id = ?",resource.id).update(total: total)
-
-          # Almaceno detalles y actualizo los items
-          details.each do |detail|
-            detail.save()
-          end
-          to_store.each do |item|
-            # Los items se actualizan mal. Ademas falta agregarles la clave de sell.
-            Item.where("id = ?",item.id).update(state: item.state, sold_price: item.sold_price, sell_id: resource.id)
-          end
-        end
+        #details = []
+        #products = context[:data][:meta]      
+        #to_store = []
+        #total = 0
+#
+        ## Reviso que las condiciones esten dadas para cada producto
+        #products.each_key do |each|
+        #  id = products[each][:product_id]
+        #  cantidad = products[each][:cantidad]
+        #  result = evaluate_details_creation(id,cantidad)
+        #  if result
+        #    #agregar items a modificar
+        #    price_per_unit = Product.find(id).cost_per_unit
+        #    total = total + price_per_unit * cantidad
+#
+        #    # crear los items una vez que estan creados los detalles
+        #    items = Item.where(["product_id = ? AND state = ?", id, "disponible"]).first(cantidad)
+        #    items.each do |item|
+        #      item.sell_id = id 
+        #      item.state = 'vendido'
+        #      item.sold_price = price_per_unit
+        #      to_store.push(item)
+        #    end
+        #    details.push(Detail.new(product_id: id, number_of_items: cantidad,sell_id: resource.id ))
+        #  else
+        #    #rollback
+        #    return false
+        #  end
+#
+        #  # Guardo el total en la venta
+        #  Sell.where("id = ?",resource.id).update(total: total)
+#
+        #  # Almaceno detalles y actualizo los items
+        #  details.each do |detail|
+        #    detail.save()
+        #  end
+        #  to_store.each do |item|
+        #    # Los items se actualizan mal. Ademas falta agregarles la clave de sell.
+        #    Item.where("id = ?",item.id).update(state: item.state, sold_price: item.sold_price, sell_id: resource.id)
+        #  end
+        #end
         return JSONAPI::ResourceOperationResult.new((result == :completed ? :created : :accepted), resource)
       end
     end
 
-    def evaluate_details_creation(id, cantidad)
-      product ||= Product.find(id)
-          if (!product.nil?)
-            if(product.items().disponibles().count() >= cantidad)
-              puts "Hay la cantidad necesaria"
-              return true
-            else
-              puts "La cantidad de productos no es suficiente"
-              return false
-            end
-          else
-            puts "No existe el producto con ese id."
-            return false
-          end
+    def add_item_for_product(id,cantidad,to_store,price_per_unit)   
+      # Actualiza los items una vez que estan creados los detalles
+      items = Item.where(["product_id = ? AND state = ?", id, "disponible"]).first(cantidad)
+      items.each do |item|
+        item.sell_id = id 
+        item.state = 'vendido'
+        item.sold_price = price_per_unit
+        to_store.push(item)
+      end
+   end
+
+    def add_detail(id,cantidad, product_id, details)
+      details.push(Detail.new(product_id: product_id, number_of_items: cantidad,sell_id: id ))
+    end
+
+    def update_items(to_store,id)
+      to_store.each do |item|
+        Item.where("id = ?",item.id).update(state: item.state, sold_price: item.sold_price, sell_id: id)
+      end
+    end
+
+    def save_total(id,total)
+      Sell.where("id = ?",id).update(total: total)
     end
 
     def find
@@ -124,11 +137,29 @@ class SellProcessor < JSONAPI::Processor
 
             # Probando como devolver los datos que se recuperan
             puts (" \n\n\n Esto es lo que hay en resource records: " + resource_records.to_s + "\n\n\n")
-            puts resource_records.class
+            #puts resource_records.class
             data = Array.new
             # Cada elemento de resource records tiene una venta
-            puts resource_records.first().date()
-      
+            #puts resource_records.first().date()
+            #puts resource_records.first().class --> SellResource
+
+            # Puedo hacer esto o crear un resource nuevo
+            resource_records.each do |sell|
+              a_sell = { date: sell.date()}
+              a_sell = {total: Sell.find(sell.id).total}
+              if (sell.tipo_cliente == "dependiente")
+                a_sell = {nombre: ClienteDependiente.find(sell.cliente_dependiente_id).nombre()}
+              elsif (sell.tipo_cliente == "autonomo")
+                autonomo = ClienteDependiente.find(sell.cliente_autonomo_id)
+                if (autonomo.tipo_cliente.persona_fisica?)
+                  a_sell = {nombre: autonomo.nombre()}
+                else
+                  a_sell = {razon_social: autonomo.razon_social()}
+                end
+              end
+              data.push(a_sell)
+            end
+            puts data
             return JSONAPI::ResourcesOperationResult.new(:ok, resource_records, page_options)
             
         else

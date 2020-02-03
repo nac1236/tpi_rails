@@ -1,5 +1,4 @@
 class Sell < ApplicationRecord
-    validates :date, presence: true
     validates :tipo_cliente, presence: true
 
     has_many :details

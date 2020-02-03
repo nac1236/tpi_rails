@@ -1,14 +1,14 @@
 class ItemProcessor < JSONAPI::Processor
 
     def create_resource
-        params[:data][:attributes] = { product_id: context[:product_id] }
-        #params[:data][:attributes] = { sell_id: context[:sell_id] }
-        data = params[:data]
+        context[:data][:attributes] = { product_id: context[:data][:product_id] }
+        data = context[:data]
         items = Array.new
         resource = nil
         result = nil
-        if(context[:cantidad] > 0)
-            context[:cantidad].times do # crea un solo item
+        cantidad =  context[:data][:meta][:cantidad].to_i
+        if(cantidad > 0)
+            cantidad.times do
                 resource = resource_klass.create(context)
                 result = resource.replace_fields(data)
                 if(result == :completed)
