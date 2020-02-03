@@ -1,7 +1,7 @@
 class ClienteAutonomo < ApplicationRecord
-    validates :cuit, presence: true, if: :persona_fisica?
+    validates :cuit, presence: true 
     validates :razon_social, presence: true, if: :empresa?
-    validates :nombre, presence: true
+    validates :nombre, presence: true, if: :persona_fisica?
     validates :codigo_tipo_responsable, presence: true
     validates :email, presence: true
     validates :tipo_cliente, presence: true

@@ -3,4 +3,5 @@ class User < ApplicationRecord
     validates :password, presence: true
     
     has_many :sells
+    has_many :reservations
 end
