@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
 
     def create
         return unless verify_content_type_header
+        return unless verify_accept_header
 
         if( params[:data][:attributes][:username] and params[:data][:attributes][:password])
             user = User.find_by(username: params[:data][:attributes][:username])
@@ -16,14 +17,20 @@ class SessionsController < ApplicationController
                         session = Session.new(jwt)
                         render json:  JSONAPI::ResourceSerializer.new(SessionResource).object_hash(SessionResource.new(session, nil))
                 else
-                    #retorno = JSONAPI::ErrorsOperationResult.new(:not_found, JSONAPI::Error.new(code: "404"))
-                    
-                    # En vez de crear un error voy a intentar levantar una excepcion
-                    # probar mandar otro error --> 
-                    handle_exceptions( JSONAPI::Exceptions::RecordNotFound.new(id:"username"))
+                    login_incorrecto(:not_found, "Contraseña incorrecta.")
+                    #handle_exceptions( JSONAPI::Exceptions::RecordNotFound.new(id:"username"))
                 end
+            else
+                login_incorrecto(:not_found, "No se encontro el usuario.")    
             end
+        else
+            login_incorrecto(:bad_request, "Bad request")
         end
+    end
+
+    def login_incorrecto(status, detail)
+        response.status = status
+        render json: JSONAPI::ErrorsOperationResult.new(status, JSONAPI::Error.new(title: "Login incorrecto.", detail: detail))
     end
 
 end

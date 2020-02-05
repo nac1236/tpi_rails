@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_03_005558) do
+ActiveRecord::Schema.define(version: 2020_02_05_204559) do
 
   create_table "cliente_autonomos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "cuit"
@@ -92,8 +92,10 @@ ActiveRecord::Schema.define(version: 2020_02_03_005558) do
     t.bigint "cliente_autonomo_id"
     t.bigint "cliente_dependiente_id"
     t.decimal "total", precision: 10
+    t.bigint "sell_id"
     t.index ["cliente_autonomo_id"], name: "index_reservations_on_cliente_autonomo_id"
     t.index ["cliente_dependiente_id"], name: "index_reservations_on_cliente_dependiente_id"
+    t.index ["sell_id"], name: "index_reservations_on_sell_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 
@@ -134,6 +136,7 @@ ActiveRecord::Schema.define(version: 2020_02_03_005558) do
   add_foreign_key "reservation_details", "reservations"
   add_foreign_key "reservations", "cliente_autonomos"
   add_foreign_key "reservations", "cliente_dependientes"
+  add_foreign_key "reservations", "sells"
   add_foreign_key "reservations", "users"
   add_foreign_key "sells", "cliente_autonomos"
   add_foreign_key "sells", "cliente_dependientes"

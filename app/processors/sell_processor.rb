@@ -94,7 +94,6 @@ class SellProcessor < JSONAPI::Processor
 
             # Puedo hacer esto o crear un resource nuevo
             resource_records.each do |sell|
-              a_sell = { date: sell.date()}
               a_sell = {total: Sell.find(sell.id).total}
               if (sell.tipo_cliente == "dependiente")
                 a_sell = {nombre: ClienteDependiente.find(sell.cliente_dependiente_id).nombre()}
@@ -109,13 +108,7 @@ class SellProcessor < JSONAPI::Processor
               data.push(a_sell)
             end
             puts data
-            return JSONAPI::ResourcesOperationResult.new(:ok, resource_records, page_options)
-            
-        else
-            errors = Array.new
-            errors.push(JSONAPI::Error.new({code: 403}))
-            return JSONAPI::ErrorsOperationResult.new(:forbidden, errors)
-        end
+            #return JSONAPI::ResourcesOperationResult.new(:ok, data, page_options)
     end
-
+  end
 end

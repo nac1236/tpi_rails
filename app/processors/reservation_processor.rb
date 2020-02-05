@@ -3,8 +3,8 @@ include DetailsHandling
 class ReservationProcessor < JSONAPI::Processor
     
     def create_resource
-          
         if(!context[:user].nil?)
+          params[:data][:user_id] = context[:user].id
           data = params[:data]
           resource = resource_klass.create(context)
           result = resource.replace_fields(data)
@@ -16,7 +16,6 @@ class ReservationProcessor < JSONAPI::Processor
     end
 
     def add_item_for_product(id,cantidad,to_store,price_per_unit)   
-        # Actualiza los items una vez que estan creados los detalles
         items = Item.where(["product_id = ? AND state = ?", id, "disponible"]).first(cantidad)
         items.each do |item|
           item.sell_id = id 
@@ -68,49 +67,53 @@ class ReservationProcessor < JSONAPI::Processor
 
     def replace_fields
         if(!context[:user].nil?)
-            puts "Ejecutando replace_fields \n\n\n"
             resource_id = params[:resource_id]
             params[:data][:attributes][:sold] = true
             data = params[:data]
             resource = resource_klass.find_by_key(resource_id, context: context)
             if(resource.sold == false)
-                result_reservation = resource.replace_fields(data)
-                
+                                
                 sell = nil
 
+                reservation = Reservation.find(resource_id)
+
                 if(!resource.cliente_dependiente_id == nil)
-                    sell = Sell.new(user_id: resource_id, cliente_dependiente_id: 
+                    sell = Sell.new(user_id: resource.user_id, cliente_dependiente_id: 
                     resource.cliente_dependiente_id,tipo_cliente: "dependiente", 
-                    total:Reservation.find(resource.id).total)
+                    total:reservation.total)
                 else
-                    sell = Sell.new(user_id: resource_id, cliente_autonomo_id: 
+                    sell = Sell.new(user_id: resource.user_id, cliente_autonomo_id: 
                     resource.cliente_dependiente_id,tipo_cliente: "autonomo", 
-                    total:Reservation.find(resource.id).total)
+                    total:reservation.total)
                 end
+
+                sell.save()
+                sell_id = Sell.last.id
            
-                #Inicializacion de las variables
                 details = []
                 items = []
-                reservation_details = Reservation.find(resource_id).reservation_details()
-                reservation_items = Reservation.find(resource_id).items()
-                #puts reservation_details
+                reservation_details = reservation.reservation_details()
+                reservation_items = reservation.items()
+        
                 reservation_items.each do |item|
-                    item.sell_id = sell.id
+                    item.sell_id = sell_id
                     item.state = 'vendido'
                     items.push(item)
                 end
 
                 reservation_details.each do |r_detail|
-                    details.push(Detail.new(product_id: r_detail.product_id, number_of_items: r_detail.number_of_items,sell_id: sell.id ))
+                    details.push(Detail.new(product_id: r_detail.product_id, number_of_items: r_detail.number_of_items,sell_id: sell_id ))
                 end
 
                 details.each do |detail|
                     detail.save()
                 end
+               
                 items.each do |item|
-                    Item.where("id = ?",item.id).update(state: item.state, sell_id: resource.id)
-                  end
-                Sell.save()
+                    Item.where("id = ?",item.id).update(state: item.state, sell_id: sell_id)
+                end
+                resource.sell_id = sell_id
+                result_reservation = resource.replace_fields(data)
             end
             return JSONAPI::ResourceOperationResult.new(result == :completed ? :ok : :accepted, resource)
         end

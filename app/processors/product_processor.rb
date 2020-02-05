@@ -30,13 +30,12 @@ class ProductProcessor < JSONAPI::Processor
 
             if (context[:data][:q] == 'in_stock')   
                 resources.each do |product|
-                    if(product.items.disponibles.count() > 0)
+                    if(Product.find(product.id).items.disponibles.count() > 0)
                         resource_records.push(product)
                     end
                 end
             elsif (context[:data][:q] == 'scarce') 
                 resources.each do |product|
-                    #if(1 <= product.items.disponibles.count() and product.items.disponibles.count() <= 5)
                     if(1 <= Product.find(product.id).items.disponibles.count() and Product.find(product.id).items.disponibles.count() <= 5)
                         resource_records.push(product)
                     end
@@ -62,11 +61,6 @@ class ProductProcessor < JSONAPI::Processor
             end
 
             return JSONAPI::ResourcesOperationResult.new(:ok, resource_records, page_options)
-        else
-            puts "No estas logueado. \n\n\n"
-            #errors = Array.new
-            #errors.push(JSONAPI::Error.new({code: 403}))
-            #return JSONAPI::ErrorsOperationResult.new(:forbidden, errors)
         end
     end
 
