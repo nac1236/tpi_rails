@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
                         {user_id: user.id, exp: (Time.now + 1800).to_i},
                         Rails.application.secrets.secret_key_base,
                         'HS256')
+                        puts ("\n\n\nToken para loguearse: " + jwt + "\n\n\n")
                         session = Session.new(jwt)
                         render json:  JSONAPI::ResourceSerializer.new(SessionResource).object_hash(SessionResource.new(session, nil))
                 else
