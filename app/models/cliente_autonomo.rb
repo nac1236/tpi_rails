@@ -15,6 +15,7 @@ class ClienteAutonomo < ApplicationRecord
     end
 
     has_many :sells
+    has_many :reservations
 
     has_many :phone_numbers
 

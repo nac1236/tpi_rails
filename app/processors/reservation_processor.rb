@@ -30,7 +30,7 @@ class ReservationProcessor < JSONAPI::Processor
     end
 
     def save_total(id,total)
-        ReservationDetail.where("id = ?",id).update(total: total)
+        Reservation.where("id = ?",id).update(total: total)
     end
 
     def remove_resource

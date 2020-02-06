@@ -1,13 +1,11 @@
 module DetailsHandling
 
   def create_details_for(id)
-    # Inicializacion de las variables
     details = []
     products = context[:data][:meta]      
     to_store = []
     total = 0
 
-    # Reviso que las condiciones esten dadas para cada producto
     products.each_key do |each|
       product_id = products[each][:product_id]
       cantidad = products[each][:cantidad]
@@ -45,7 +43,7 @@ module DetailsHandling
     end
 
     def save_details(details)
-      # Almaceno detalles
+      # Almacena detalles
       details.each do |detail|
         detail.save()
       end

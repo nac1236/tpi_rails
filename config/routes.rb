@@ -19,4 +19,8 @@ Rails.application.routes.draw do
 
   jsonapi_resources :reservations, except: [:update]
 
+  jsonapi_resources :cliente_dependientes, only: [:create,:index]
+
+  jsonapi_resources :cliente_autonomos, only: [:create,:index]
+
 end

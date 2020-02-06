@@ -6,6 +6,7 @@ class ClienteDependiente < ApplicationRecord
     validates :email, presence: true
 
     has_many :sells
+    has_many :reservations
     has_many :phone_numbers
 
     validates :phone_numbers, :length => { :minimum => 1 }
