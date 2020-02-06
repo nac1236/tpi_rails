@@ -30,4 +30,5 @@
 - Desde una terminal ejecutar --> `bin/rails s`
 
 # Rutas y ejemplos de uso.
-# Wiki --> https://github.com/nac1236/tpi_rails/wiki
+
+- Wiki --> https://github.com/nac1236/tpi_rails/wiki
